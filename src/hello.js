@@ -14,10 +14,10 @@ function allKeys(obj,array) {
   for(var property in obj) {
     if(obj.hasOwnProperty(property)) {
       if(typeof obj[property] === "object") {
-        array.push(property);
+        array.push(`${property}: ${obj[property]}`);
         array.concat(allKeys(obj[property],array));
       } else {
-        array.push(property);
+        array.push(`${property}: ${obj[property]}`);
       }
     }
   }
