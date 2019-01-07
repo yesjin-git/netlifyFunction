@@ -2,12 +2,12 @@ exports.handler = function(event, context, callback) {
   console.log(context)
   let msg = handleEvent(event.body)
 
-  let fs = require("fs")
-  fs.writeFile("test.txt", event.body, function(err) {
-    if (err) {
-      console.log(err)
-    }
-  })
+  // let fs = require("fs")
+  // fs.writeFile("test.txt", event.body, function(err) {
+  //   if (err) {
+  //     console.log(err)
+  //   }
+  // })
 
   callback(null, {
     statusCode: 200,
