@@ -1,6 +1,6 @@
 exports.handler = function(event, context, callback) {
   console.log(context)
-  let msg = handleEvent(event.body)
+  let msg = handleEvent(event)
   console.log(event.body)
 
   // let fs = require("fs")
