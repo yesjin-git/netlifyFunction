@@ -1,6 +1,7 @@
 exports.handler = function(event, context, callback) {
   console.log(context)
   let msg = handleEvent(event.body)
+  console.log(event.body.body)
 
   // let fs = require("fs")
   // fs.writeFile("test.txt", event.body, function(err) {
