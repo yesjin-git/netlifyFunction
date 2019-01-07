@@ -30,7 +30,7 @@ function handleEvent(postReq) {
 
   let msg = ""
   switch (command) {
-    case "/startClass":
+    case "/startclass":
       msg = startClass(text)
       break
   }
